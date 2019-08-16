@@ -1,2 +1,2 @@
-# tableau_calculations
-Helpful and reusable calculations for Tableau
+# Helpful and reusable calculations for Tableau
+This is a collection of helpful and resuable calculations for Tableau Dashboards.
