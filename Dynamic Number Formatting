@@ -27,7 +27,7 @@ ELSE '.' + STR((ROUND(ABS(SUM([Value]))/POWER(1000,INT(LOG(ABS(SUM([Value])),100
 END
 +
 //Determine the Unit to display based on the Log Base 1000
-CASE INT(ROUND(LOG(ABS(SUM([Value])),1000),2)) //Unit Symbol
+CASE INT(LOG(ROUND(ABS(SUM([Value]))/10,0)*10,1000)) //Unit Symbol
 WHEN 1 THEN 'K'
 WHEN 2 THEN 'M'
 WHEN 3 THEN 'B'
